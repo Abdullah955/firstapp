@@ -17,6 +17,9 @@
 		2D41D96125AF85C00060EE4A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D41D96025AF85C00060EE4A /* ProfileViewController.swift */; };
 		2D41D96625AF85CE0060EE4A /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D41D96525AF85CE0060EE4A /* ExploreViewController.swift */; };
 		2D41D96B25AF8DCB0060EE4A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D41D96A25AF8DCB0060EE4A /* CameraViewController.swift */; };
+		2D534A5B25AFA883003B1686 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D534A5A25AFA883003B1686 /* GoogleService-Info.plist */; };
+		2D534A6025AFAAA6003B1686 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D534A5F25AFAAA6003B1686 /* LoginViewController.swift */; };
+		2D534A6825AFAAC3003B1686 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D534A6725AFAAC3003B1686 /* RegistrationViewController.swift */; };
 		76A4A7A6003640D14637D928 /* Pods_Pathy_PathyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C535B509E7F02C6B489829F /* Pods_Pathy_PathyUITests.framework */; };
 		9B5F8404A1EB563882E10097 /* Pods_PathyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783B0EE526BA4607C2EF7516 /* Pods_PathyTests.framework */; };
 		CBDAE45B6EDF97E0EE177B56 /* Pods_Pathy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E809C7ACAECC974B33AA57A /* Pods_Pathy.framework */; };
@@ -56,6 +59,9 @@
 		2D41D96025AF85C00060EE4A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2D41D96525AF85CE0060EE4A /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		2D41D96A25AF8DCB0060EE4A /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		2D534A5A25AFA883003B1686 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2D534A5F25AFAAA6003B1686 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2D534A6725AFAAC3003B1686 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		4F618B133C5B1BF39B891F63 /* Pods-Pathy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pathy.debug.xcconfig"; path = "Target Support Files/Pods-Pathy/Pods-Pathy.debug.xcconfig"; sourceTree = "<group>"; };
 		55F1576A3D97591A395F40B1 /* Pods-Pathy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pathy.release.xcconfig"; path = "Target Support Files/Pods-Pathy/Pods-Pathy.release.xcconfig"; sourceTree = "<group>"; };
 		5E809C7ACAECC974B33AA57A /* Pods_Pathy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pathy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +122,7 @@
 		2D41D91925AF7BA70060EE4A /* Pathy */ = {
 			isa = PBXGroup;
 			children = (
+				2D534A5925AFA862003B1686 /* Onboarding */,
 				2D41D95325AF7C690060EE4A /* View */,
 				2D41D95225AF7C520060EE4A /* Controllers */,
 				2D41D95125AF7C440060EE4A /* Models */,
@@ -128,6 +135,7 @@
 		2D41D94D25AF7C220060EE4A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2D534A5A25AFA883003B1686 /* GoogleService-Info.plist */,
 				2D41D91A25AF7BA70060EE4A /* AppDelegate.swift */,
 				2D41D91C25AF7BA70060EE4A /* SceneDelegate.swift */,
 			);
@@ -169,6 +177,15 @@
 				2D41D92325AF7BAA0060EE4A /* Assets.xcassets */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2D534A5925AFA862003B1686 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				2D534A5F25AFAAA6003B1686 /* LoginViewController.swift */,
+				2D534A6725AFAAC3003B1686 /* RegistrationViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		6C8188A69103577051193345 /* Pods */ = {
@@ -303,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D41D92725AF7BAA0060EE4A /* LaunchScreen.storyboard in Resources */,
+				2D534A5B25AFA883003B1686 /* GoogleService-Info.plist in Resources */,
 				2D41D92425AF7BAA0060EE4A /* Assets.xcassets in Resources */,
 				2D41D92225AF7BA70060EE4A /* Main.storyboard in Resources */,
 			);
@@ -435,7 +453,9 @@
 				2D41D91F25AF7BA70060EE4A /* TimelineViewController.swift in Sources */,
 				2D41D91B25AF7BA70060EE4A /* AppDelegate.swift in Sources */,
 				2D41D96625AF85CE0060EE4A /* ExploreViewController.swift in Sources */,
+				2D534A6825AFAAC3003B1686 /* RegistrationViewController.swift in Sources */,
 				2D41D96125AF85C00060EE4A /* ProfileViewController.swift in Sources */,
+				2D534A6025AFAAA6003B1686 /* LoginViewController.swift in Sources */,
 				2D41D96B25AF8DCB0060EE4A /* CameraViewController.swift in Sources */,
 				2D41D95925AF85B60060EE4A /* NotificationViewController.swift in Sources */,
 				2D41D91D25AF7BA70060EE4A /* SceneDelegate.swift in Sources */,
