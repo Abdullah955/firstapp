@@ -1,0 +1,6 @@
+framework module Pods_Pathy {
+  umbrella header "Pods-Pathy-umbrella.h"
+
+  export *
+  module * { export * }
+}

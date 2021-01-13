@@ -1,0 +1,5 @@
+
+:gemdir:
+   - ~/.gem/ruby
+install: -n /usr/local/bin
+

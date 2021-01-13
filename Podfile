@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '14.2'
 
 target 'Pathy' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -15,5 +15,16 @@ target 'Pathy' do
   target 'PathyUITests' do
     # Pods for testing
   end
+
+pod 'Appirater'
+
+# Firebase
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
+pod 'Firebase/Storage'
+pod 'Firebase/Analytics'
+pod 'Firebase/Crashlytics'
+
 
 end
