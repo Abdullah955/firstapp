@@ -23,6 +23,8 @@
 		2D534A7325AFAF8B003B1686 /* AuthManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D534A7225AFAF8B003B1686 /* AuthManger.swift */; };
 		2D534A7825AFB041003B1686 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D534A7725AFB041003B1686 /* DatabaseManager.swift */; };
 		2D534A7D25AFB04B003B1686 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D534A7C25AFB04B003B1686 /* StorageManager.swift */; };
+		2D980FDE25B13EB100E6DC82 /* ActionButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D980FDD25B13EB100E6DC82 /* ActionButtonViewController.swift */; };
+		2D98103525B1F7D600E6DC82 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D98103425B1F7D600E6DC82 /* Extensions.swift */; };
 		76A4A7A6003640D14637D928 /* Pods_Pathy_PathyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C535B509E7F02C6B489829F /* Pods_Pathy_PathyUITests.framework */; };
 		9B5F8404A1EB563882E10097 /* Pods_PathyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783B0EE526BA4607C2EF7516 /* Pods_PathyTests.framework */; };
 		CBDAE45B6EDF97E0EE177B56 /* Pods_Pathy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E809C7ACAECC974B33AA57A /* Pods_Pathy.framework */; };
@@ -69,6 +71,8 @@
 		2D534A7225AFAF8B003B1686 /* AuthManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManger.swift; sourceTree = "<group>"; };
 		2D534A7725AFB041003B1686 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		2D534A7C25AFB04B003B1686 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		2D980FDD25B13EB100E6DC82 /* ActionButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonViewController.swift; sourceTree = "<group>"; };
+		2D98103425B1F7D600E6DC82 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4F618B133C5B1BF39B891F63 /* Pods-Pathy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pathy.debug.xcconfig"; path = "Target Support Files/Pods-Pathy/Pods-Pathy.debug.xcconfig"; sourceTree = "<group>"; };
 		55F1576A3D97591A395F40B1 /* Pods-Pathy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pathy.release.xcconfig"; path = "Target Support Files/Pods-Pathy/Pods-Pathy.release.xcconfig"; sourceTree = "<group>"; };
 		5E809C7ACAECC974B33AA57A /* Pods_Pathy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pathy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,11 +134,12 @@
 		2D41D91925AF7BA70060EE4A /* Pathy */ = {
 			isa = PBXGroup;
 			children = (
-				2D534A5925AFA862003B1686 /* Onboarding */,
+				2D41D94D25AF7C220060EE4A /* Resources */,
 				2D41D95325AF7C690060EE4A /* View */,
+				2D980FDC25B13E7D00E6DC82 /* Action button */,
+				2D534A5925AFA862003B1686 /* Onboarding */,
 				2D41D95225AF7C520060EE4A /* Controllers */,
 				2D41D95125AF7C440060EE4A /* Models */,
-				2D41D94D25AF7C220060EE4A /* Resources */,
 				2D41D92825AF7BAA0060EE4A /* Info.plist */,
 			);
 			path = Pathy;
@@ -149,6 +154,7 @@
 				2D534A7225AFAF8B003B1686 /* AuthManger.swift */,
 				2D534A7725AFB041003B1686 /* DatabaseManager.swift */,
 				2D534A7C25AFB04B003B1686 /* StorageManager.swift */,
+				2D98103425B1F7D600E6DC82 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -164,10 +170,10 @@
 			isa = PBXGroup;
 			children = (
 				2D41D91E25AF7BA70060EE4A /* TimelineViewController.swift */,
-				2D41D95825AF85B60060EE4A /* NotificationViewController.swift */,
-				2D41D96025AF85C00060EE4A /* ProfileViewController.swift */,
 				2D41D96525AF85CE0060EE4A /* ExploreViewController.swift */,
 				2D41D96A25AF8DCB0060EE4A /* CameraViewController.swift */,
+				2D41D95825AF85B60060EE4A /* NotificationViewController.swift */,
+				2D41D96025AF85C00060EE4A /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -213,6 +219,14 @@
 				2D534A6E25AFAE1C003B1686 /* Assets.xcassets */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2D980FDC25B13E7D00E6DC82 /* Action button */ = {
+			isa = PBXGroup;
+			children = (
+				2D980FDD25B13EB100E6DC82 /* ActionButtonViewController.swift */,
+			);
+			path = "Action button";
 			sourceTree = "<group>";
 		};
 		6C8188A69103577051193345 /* Pods */ = {
@@ -484,11 +498,13 @@
 				2D41D96625AF85CE0060EE4A /* ExploreViewController.swift in Sources */,
 				2D534A6825AFAAC3003B1686 /* RegistrationViewController.swift in Sources */,
 				2D41D96125AF85C00060EE4A /* ProfileViewController.swift in Sources */,
+				2D980FDE25B13EB100E6DC82 /* ActionButtonViewController.swift in Sources */,
 				2D534A7325AFAF8B003B1686 /* AuthManger.swift in Sources */,
 				2D534A6025AFAAA6003B1686 /* LoginViewController.swift in Sources */,
 				2D41D96B25AF8DCB0060EE4A /* CameraViewController.swift in Sources */,
 				2D41D95925AF85B60060EE4A /* NotificationViewController.swift in Sources */,
 				2D41D91D25AF7BA70060EE4A /* SceneDelegate.swift in Sources */,
+				2D98103525B1F7D600E6DC82 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,5 +26,9 @@ pod 'Firebase/Storage'
 pod 'Firebase/Analytics'
 pod 'Firebase/Crashlytics'
 
+#lib
+pod 'FanMenu'
+pod 'CircleMenu'
+
 
 end
