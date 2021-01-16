@@ -26,6 +26,7 @@
 		2D980FDE25B13EB100E6DC82 /* ActionButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D980FDD25B13EB100E6DC82 /* ActionButtonViewController.swift */; };
 		2D98103525B1F7D600E6DC82 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D98103425B1F7D600E6DC82 /* Extensions.swift */; };
 		2D98104925B350AF00E6DC82 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D98104825B350AF00E6DC82 /* MapViewController.swift */; };
+		2D98104E25B38D7A00E6DC82 /* Map1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D98104D25B38D7A00E6DC82 /* Map1ViewController.swift */; };
 		76A4A7A6003640D14637D928 /* Pods_Pathy_PathyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C535B509E7F02C6B489829F /* Pods_Pathy_PathyUITests.framework */; };
 		9B5F8404A1EB563882E10097 /* Pods_PathyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783B0EE526BA4607C2EF7516 /* Pods_PathyTests.framework */; };
 		CBDAE45B6EDF97E0EE177B56 /* Pods_Pathy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E809C7ACAECC974B33AA57A /* Pods_Pathy.framework */; };
@@ -75,6 +76,7 @@
 		2D980FDD25B13EB100E6DC82 /* ActionButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonViewController.swift; sourceTree = "<group>"; };
 		2D98103425B1F7D600E6DC82 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2D98104825B350AF00E6DC82 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		2D98104D25B38D7A00E6DC82 /* Map1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map1ViewController.swift; sourceTree = "<group>"; };
 		4F618B133C5B1BF39B891F63 /* Pods-Pathy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pathy.debug.xcconfig"; path = "Target Support Files/Pods-Pathy/Pods-Pathy.debug.xcconfig"; sourceTree = "<group>"; };
 		55F1576A3D97591A395F40B1 /* Pods-Pathy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pathy.release.xcconfig"; path = "Target Support Files/Pods-Pathy/Pods-Pathy.release.xcconfig"; sourceTree = "<group>"; };
 		5E809C7ACAECC974B33AA57A /* Pods_Pathy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pathy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				2D98104825B350AF00E6DC82 /* MapViewController.swift */,
+				2D98104D25B38D7A00E6DC82 /* Map1ViewController.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D41D91F25AF7BA70060EE4A /* TimelineViewController.swift in Sources */,
+				2D98104E25B38D7A00E6DC82 /* Map1ViewController.swift in Sources */,
 				2D534A7825AFB041003B1686 /* DatabaseManager.swift in Sources */,
 				2D41D91B25AF7BA70060EE4A /* AppDelegate.swift in Sources */,
 				2D534A7D25AFB04B003B1686 /* StorageManager.swift in Sources */,

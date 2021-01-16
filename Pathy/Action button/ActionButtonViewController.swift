@@ -51,8 +51,8 @@ class ActionButtonViewController: UIViewController {
         fanMenu.onItemWillClick = { button in
 
             if button.id == "map" {
-                let LoginVC = MapViewController()
-//                LoginVC.modalPresentationStyle = .popover
+                let LoginVC = Map1ViewController()
+               LoginVC.modalPresentationStyle = .fullScreen
                 self.present(LoginVC, animated: true)
              }
         }
