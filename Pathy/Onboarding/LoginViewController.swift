@@ -113,7 +113,8 @@ class LoginViewController: UIViewController {
         CreateAccount.frame = CGRect(x:25
                                   ,y: loginButton.bottom + 10
                                   ,width: view.width-50
-                                  ,height: 52.0)
+     
+                                     ,height: 52.0)
     }
     private func addSubViews(){
         view.addSubview(usernameField)

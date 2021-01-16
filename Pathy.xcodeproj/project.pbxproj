@@ -25,6 +25,7 @@
 		2D534A7D25AFB04B003B1686 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D534A7C25AFB04B003B1686 /* StorageManager.swift */; };
 		2D980FDE25B13EB100E6DC82 /* ActionButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D980FDD25B13EB100E6DC82 /* ActionButtonViewController.swift */; };
 		2D98103525B1F7D600E6DC82 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D98103425B1F7D600E6DC82 /* Extensions.swift */; };
+		2D98104925B350AF00E6DC82 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D98104825B350AF00E6DC82 /* MapViewController.swift */; };
 		76A4A7A6003640D14637D928 /* Pods_Pathy_PathyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C535B509E7F02C6B489829F /* Pods_Pathy_PathyUITests.framework */; };
 		9B5F8404A1EB563882E10097 /* Pods_PathyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783B0EE526BA4607C2EF7516 /* Pods_PathyTests.framework */; };
 		CBDAE45B6EDF97E0EE177B56 /* Pods_Pathy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E809C7ACAECC974B33AA57A /* Pods_Pathy.framework */; };
@@ -73,6 +74,7 @@
 		2D534A7C25AFB04B003B1686 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		2D980FDD25B13EB100E6DC82 /* ActionButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonViewController.swift; sourceTree = "<group>"; };
 		2D98103425B1F7D600E6DC82 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2D98104825B350AF00E6DC82 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4F618B133C5B1BF39B891F63 /* Pods-Pathy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pathy.debug.xcconfig"; path = "Target Support Files/Pods-Pathy/Pods-Pathy.debug.xcconfig"; sourceTree = "<group>"; };
 		55F1576A3D97591A395F40B1 /* Pods-Pathy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pathy.release.xcconfig"; path = "Target Support Files/Pods-Pathy/Pods-Pathy.release.xcconfig"; sourceTree = "<group>"; };
 		5E809C7ACAECC974B33AA57A /* Pods_Pathy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pathy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +136,7 @@
 		2D41D91925AF7BA70060EE4A /* Pathy */ = {
 			isa = PBXGroup;
 			children = (
+				2D98103F25B34AFC00E6DC82 /* Map */,
 				2D41D94D25AF7C220060EE4A /* Resources */,
 				2D41D95325AF7C690060EE4A /* View */,
 				2D980FDC25B13E7D00E6DC82 /* Action button */,
@@ -227,6 +230,14 @@
 				2D980FDD25B13EB100E6DC82 /* ActionButtonViewController.swift */,
 			);
 			path = "Action button";
+			sourceTree = "<group>";
+		};
+		2D98103F25B34AFC00E6DC82 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				2D98104825B350AF00E6DC82 /* MapViewController.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		6C8188A69103577051193345 /* Pods */ = {
@@ -504,6 +515,7 @@
 				2D41D96B25AF8DCB0060EE4A /* CameraViewController.swift in Sources */,
 				2D41D95925AF85B60060EE4A /* NotificationViewController.swift in Sources */,
 				2D41D91D25AF7BA70060EE4A /* SceneDelegate.swift in Sources */,
+				2D98104925B350AF00E6DC82 /* MapViewController.swift in Sources */,
 				2D98103525B1F7D600E6DC82 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

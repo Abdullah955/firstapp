@@ -30,7 +30,7 @@ class TimelineViewController: UIViewController {
     
     private func handleNonAuth(){
             // check auth status
-            if Auth.auth().currentUser == nil{
+            if Auth.auth().currentUser != nil{
                 // Show login
                 let LoginVC = LoginViewController()
                 LoginVC.modalPresentationStyle = .fullScreen
