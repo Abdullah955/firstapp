@@ -11,23 +11,18 @@ class MapViewController: UIViewController, MKMapViewDelegate, UISearchBarDelegat
 
 //    @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var UItable: UITableView!
-    @IBOutlet var searchBar: UISearchBar!
+//    @IBOutlet var searchBar: UISearchBar!
+    let mySearchBar = UISearchBar()
     let mapView = MKMapView()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.addSubview(mapView)
-        mapView.delegate = self
-        
-        let mySearchBar = UISearchBar()
-        mySearchBar.frame = CGRect(x: 0, y: mapView.top + 10 , width: view.frame.size.width, height: 50)
-        mySearchBar.showsCancelButton = true
-        mySearchBar.placeholder = "Search .."
-//        mySearchBar.barStyle = .black
-        mySearchBar.searchBarStyle = .minimal
+        self.view.addSubview(mapView)
         self.view.addSubview(mySearchBar)
+        
+        mapView.delegate = self
         mySearchBar.delegate = self
 
     }
@@ -52,6 +47,15 @@ class MapViewController: UIViewController, MKMapViewDelegate, UISearchBarDelegat
         mapView.mapType = MKMapType.standard
         mapView.isZoomEnabled = true
         mapView.isScrollEnabled = true
+        
+        
+        
+        mySearchBar.frame = CGRect(x: 0, y: mapView.top + 10 , width: view.frame.size.width, height: 50)
+        mySearchBar.showsCancelButton = true
+        mySearchBar.placeholder = "Search .."
+//        mySearchBar.barStyle = .black
+        mySearchBar.searchBarStyle = .minimal
+        
         
     }
     
