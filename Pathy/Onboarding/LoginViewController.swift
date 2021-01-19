@@ -135,8 +135,6 @@ class LoginViewController: UIViewController {
         
         // login Functionality
          
-        
-        
     }
     @objc private func didTapCreateAccount(){
         let vc = RegistrationViewController()
