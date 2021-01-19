@@ -1,29 +1,38 @@
-
-
-
-
-
+//
 
 import UIKit
 import MapKit
+import CoreLocation
+
+
 
 class MapViewController: UIViewController, MKMapViewDelegate, UISearchBarDelegate {
 
 //    @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var UItable: UITableView!
 //    @IBOutlet var searchBar: UISearchBar!
-    let mySearchBar = UISearchBar()
-    let mapView = MKMapView()
-    
-    
+    let mySearchBar =  UISearchBar()
+    var mapView: MKMapView!
+
+  
+
+//    let locationManager = CLLocationManager()
+    private var locationManager: CLLocationManager!
+    private var currentLocation: CLLocation?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.view.addSubview(mapView)
-        self.view.addSubview(mySearchBar)
         
-        mapView.delegate = self
+        configurMapView()
+        configurSearchBar()
+        self.view.addSubview(mySearchBar)
         mySearchBar.delegate = self
+
+
+//        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+//        locationManager.requestWhenInUseAuthorization()
+//        locationManager.requestLocation()
+
 
     }
 
@@ -32,63 +41,57 @@ class MapViewController: UIViewController, MKMapViewDelegate, UISearchBarDelegat
         // Dispose of any resources that can be recreated.
     }
 
-//
-//     func ConflocationManager(){
-//        locationManager = CLLocationManager()
-//        locationManager.delegate = self
-//
-//    }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    func configurMapView() {
+        mapView = MKMapView()
+        mapView.showsUserLocation = true
         mapView.frame = CGRect(x: 0, y: 0.0, width: view.width, height: view.height/3)
-//            mapView.showsUserLocation = true
-//            mapView.setUserTrackingMode(MKUserTrackingMode.follow, animated: true)
         mapView.mapType = MKMapType.standard
         mapView.isZoomEnabled = true
         mapView.isScrollEnabled = true
+        self.view.addSubview(mapView)
+    }
+    
+    func configurSearchBar() {
         
-        
-        
+//        let mySearchBar = UISearchBar()
         mySearchBar.frame = CGRect(x: 0, y: mapView.top + 10 , width: view.frame.size.width, height: 50)
         mySearchBar.showsCancelButton = true
         mySearchBar.placeholder = "Search .."
 //        mySearchBar.barStyle = .black
         mySearchBar.searchBarStyle = .minimal
-        
-        
-    }
     
-    @objc func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        print("HERE")
-        searchBar.becomeFirstResponder()
+    
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+    }
+
+    
+    @objc func searchBarSearchButtonClicked(_ mySearchBar: UISearchBar) {
+        print("***")
+        mySearchBar.becomeFirstResponder()
         let geocoder = CLGeocoder()
-        geocoder.geocodeAddressString(searchBar.text!){
+        geocoder.geocodeAddressString(mySearchBar.text!){
             (placemarks:[CLPlacemark]?, error:Error? ) in
 
             if error ==  nil{
                 let placemark = placemarks?.first
                 let anno = MKPointAnnotation()
                 anno.coordinate = (placemark?.location?.coordinate)!
-                anno.title = searchBar.text!
+                anno.title = mySearchBar.text!
                 print("********")
 //                print(searchBar.text)
                 print("********")
-                print(self.mapView)
                 self.mapView.addAnnotation(anno)
                 self.mapView.selectAnnotation(anno, animated: true)
-
-                print(searchBar.bottom)
-                print(searchBar.top)
-
+//                print(self.mapView.annotations)
             }
 
             else {print(error?.localizedDescription ?? "error")}
         }
         //print("Searchig ...",searchBar.text )
     }
-
-    
-
 
 }
