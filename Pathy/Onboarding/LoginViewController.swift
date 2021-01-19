@@ -124,18 +124,55 @@ class LoginViewController: UIViewController {
         view.addSubview(headerView)
     }
 
+    
+    
+    
     @objc private func didTapLogin(){
         passwordField.resignFirstResponder()
         usernameField.resignFirstResponder()
-        
+
         guard let usernameEmail = usernameField.text, !usernameEmail.isEmpty,
-        let password = passwordField.text, !password.isEmpty, password.count >= 8 else{
+        let password = passwordField.text, !password.isEmpty, password.count >= 2 else{
             return
         }
         
+        var username: String?
+        var email: String?
+        
+        if usernameEmail.contains("@"), usernameEmail.contains("."){
+            email = usernameEmail
+        }
+        else{
+            username = usernameEmail
+        }
+        
         // login Functionality
-         
+        
+        AuthManger.shared.loginUser(username: username,
+                                    email: email,
+                                    password: password){ sucess in
+            DispatchQueue.main.async {
+                if sucess {
+                    self.dismiss(animated: true, completion: nil)
+                }
+                else{
+                    let alert = UIAlertController(title: "Login Error",
+                                                  message: "Username or Password not found",
+                                                  preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title:"Dismiss",
+                                                  style: .cancel,
+                                                  handler: nil))
+                    self.present(alert,animated: true)
+                    }
+            }
+            
+        }
+        
     }
+    
+    
+    
+    
     @objc private func didTapCreateAccount(){
         let vc = RegistrationViewController()
         present(vc, animated: true)
