@@ -52,7 +52,7 @@ class RegistrationViewController: UIViewController {
     private let passwordField: UITextField = {
         let passwordField =  UITextField()
         passwordField.isSecureTextEntry = true
-        passwordField.placeholder = "Password"
+        passwordField.placeholder = "Password n"
         passwordField.returnKeyType = .continue
         passwordField.leftViewMode = .always
         passwordField.leftView = UIView(frame: CGRect(x:0,y:0,width:10,height:0) )
@@ -63,6 +63,7 @@ class RegistrationViewController: UIViewController {
         passwordField.backgroundColor = .secondarySystemBackground
         passwordField.layer.borderWidth = 1.0
         passwordField.layer.borderColor = UIColor.secondaryLabel.cgColor
+//        passwordField.textContentType = .oneTimeCode
         return passwordField
     }()
     
