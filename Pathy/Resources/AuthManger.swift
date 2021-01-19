@@ -30,6 +30,19 @@ public class AuthManger{
                         return
                     }
                     // insert into Database
+                    DatabaseManger.shared.insertNewUser(with: email, username: username){ inserted in
+                        if inserted{
+                            // User inserted.
+                            complation(true)
+                            return
+                        }
+                        else {
+                            // Faild to insert
+                            complation(false)
+                            return
+                        }
+                        
+                    }
                 }
             }
             else {

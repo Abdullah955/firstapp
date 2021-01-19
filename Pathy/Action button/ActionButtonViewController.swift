@@ -23,6 +23,7 @@ class ActionButtonViewController: UIViewController {
         super.viewDidLoad()
         
         fanMenu.button = mainButton(colorHex:  0x9F85FF)
+        
 //        fanMenu.items = colors.enumerated().map { arg -> FanMenuButton in
 
 //            let (index, item) = arg
@@ -41,12 +42,12 @@ class ActionButtonViewController: UIViewController {
             )
         }
 
-        fanMenu.menuRadius = 90.0
+        fanMenu.menuRadius = 80.0
         fanMenu.duration = 0.2
         fanMenu.interval = (Double.pi + 0.50 , 2 * Double.pi - 0.50)
-        fanMenu.radius = 15.0
+        fanMenu.radius = 13.0
         fanMenu.menuBackground = .clear
-    
+//        fanMenu.
         
         fanMenu.onItemWillClick = { button in
 

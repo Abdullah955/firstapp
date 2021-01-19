@@ -138,15 +138,15 @@
             </objects>
             <point key="canvasLocation" x="-1194" y="584"/>
         </scene>
-        <!--Map View Controller-->
+        <!--View Controller-->
         <scene sceneID="ss0-Rq-CR2">
             <objects>
-                <viewController id="Zgl-IL-uz1" customClass="MapViewController" customModule="Pathy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Zgl-IL-uz1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ViP-ne-q8Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="By5-wX-c9t">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="By5-wX-c9t">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                             </mapView>
                         </subviews>
@@ -166,7 +166,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="maView" destination="By5-wX-c9t" id="imy-f6-ppt"/>
-                        <outlet property="mapView" destination="By5-wX-c9t" id="fmD-BF-64a"/>
                         <outlet property="searchBar" destination="R0F-PL-5ze" id="nih-Mr-3St"/>
                     </connections>
                 </viewController>

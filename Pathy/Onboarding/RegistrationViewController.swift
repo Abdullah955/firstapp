@@ -121,6 +121,17 @@ class RegistrationViewController: UIViewController {
             return
             
         }
+        AuthManger.shared.regestirNewUser(username: username, email: email, password: password){ Registered in
+            DispatchQueue.main.async {
+                if Registered{
+                    //Good to go :)
+                    
+                }
+                else {
+                    // Faild.
+                }
+            }
+        }
         
     }
 }
