@@ -12,4 +12,11 @@ import FirebaseDatabase
 public class DatabaseManger{
     
     static let shared = DatabaseManger()
+    
+    
+    public func canCreatenNewUsername(with email: String, username:String, completion: (Bool) -> Void ){
+        
+    }
+
 }
+

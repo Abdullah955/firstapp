@@ -13,7 +13,33 @@ public class AuthManger{
     static let shared = AuthManger()
     
     
-    public func regestirNewUser(username:String,  email:String, password:String){
+    public func regestirNewUser(username:String,  email:String, password:String, complation: @escaping (Bool) -> Void){
+        
+        /*
+         - Check if username is avilabile
+         - Check if email is avilablile
+         - create account
+         - insert account to Database
+         */
+        DatabaseManger.shared.canCreatenNewUsername(with: email, username: username){ canCreate in
+            if canCreate {
+                Auth.auth().createUser(withEmail: email, password: password) { result, error in
+                    guard error == nil , result != nil else{
+                        // Firebase auth could not create account.
+                        complation(false)
+                        return
+                    }
+                    // insert into Database
+                }
+            }
+            else {
+                // username or email dose not exist.
+                complation(false)
+                
+            }
+            
+            
+        }
         
     }
     
