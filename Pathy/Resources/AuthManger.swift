@@ -75,4 +75,18 @@ public class AuthManger{
             print("!!!!")
         }
     }
+    
+    // Attempt to Logout Firebase user.
+    public func LogOut(completion: (Bool) -> Void ){
+        do {
+            try Auth.auth().signOut()
+            completion(true)
+            return
+        }
+        catch{
+            completion(false)
+            print(error)
+            return
+        }
+    }
 }

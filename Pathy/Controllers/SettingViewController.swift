@@ -70,11 +70,13 @@ extension SettingViewController: UITableViewDelegate,UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath)
-        cell.textLabel?.text = data[indexPath.section][indexPath.row].title 
+        cell.textLabel?.text = data[indexPath.section][indexPath.row].title
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         // Handle cell selection.
+        let model = data[indexPath.section][indexPath.row]
+        model.handler()
     }
 }
