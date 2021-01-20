@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SettingViewController: UIViewController {
+final class SettingViewController: UIViewController {
 
     
     private let tableView: UITableView = {
@@ -15,7 +15,8 @@ class SettingViewController: UIViewController {
         tableView.register(UITableViewCell.self , forCellReuseIdentifier: "cell" )
         return tableView
         
-    }
+    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,5 +41,12 @@ extension SettingViewController: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
-    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath)
+        return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        // Handle cell selection.
+    }
 }
