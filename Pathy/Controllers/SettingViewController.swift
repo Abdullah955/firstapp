@@ -56,10 +56,25 @@ final class SettingViewController: UIViewController {
     }
     
     private func didTapLogOut(){
-        
+        AuthManger.shared.LogOut(completion: { sceess in
+            if sceess{
+                let LoginVC = LoginViewController()
+                LoginVC.modalPresentationStyle = .fullScreen
+                self.present(LoginVC, animated: true) {
+                    self.navigationController?.popToRootViewController(animated: false)
+                    self.tabBarController?.selectedIndex = 0 
+                }
+
+            }
+            else {}
+                
+            
+        } )
+            
+        }
         
     }
-}
+
 
 extension SettingViewController: UITableViewDelegate,UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
