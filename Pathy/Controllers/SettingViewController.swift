@@ -14,7 +14,7 @@ struct SettingCellModel {
 }
 
 // ViewController to show user Settings.
- class SettingViewController: UIViewController {
+final class SettingViewController: UIViewController {
 
     
     private let tableView: UITableView = {
