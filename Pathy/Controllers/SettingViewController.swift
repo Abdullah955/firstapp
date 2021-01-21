@@ -18,8 +18,10 @@ final class SettingViewController: UIViewController {
 
     
     private let tableView: UITableView = {
-        let tableView = UITableView(frame: .zero,style: .grouped)
-        tableView.register(UITableViewCell.self , forCellReuseIdentifier: "cell" )
+        let tableView = UITableView(frame: .zero,
+                                    style: .grouped)
+        tableView.register(UITableViewCell.self,
+                           forCellReuseIdentifier: "cell" )
         return tableView
         
     }()
@@ -66,20 +68,26 @@ final class SettingViewController: UIViewController {
                                             handler: nil)
                                             )
         
-        AuthManger.shared.LogOut(completion: { sceess in
-            if sceess{
-                let LoginVC = LoginViewController()
-                LoginVC.modalPresentationStyle = .fullScreen
-                self.present(LoginVC, animated: true) {
-                    self.navigationController?.popToRootViewController(animated: false)
-                    self.tabBarController?.selectedIndex = 0 
-                }
+        ActionSheet.addAction(UIAlertAction(title: "Log out", style: .destructive,handler: { _ in
+                                              
+                AuthManger.shared.LogOut(completion: { sceess in
+                    if sceess{
+                        let LoginVC = LoginViewController()
+                        LoginVC.modalPresentationStyle = .fullScreen
+                        self.present(LoginVC, animated: true) {
+                            self.navigationController?.popToRootViewController(animated: false)
+                            self.tabBarController?.selectedIndex = 0
+                        }
 
-            }
-            else {}
-                
-            
-        } )
+                    }
+                    else {}
+                    
+                } )
+                                                
+                                            }))
+        present(ActionSheet, animated: true)
+        
+
             
         }
         

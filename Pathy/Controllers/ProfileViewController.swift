@@ -13,7 +13,6 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         ConfigurNavigationBar()
-
     }
     
 
@@ -22,7 +21,6 @@ class ProfileViewController: UIViewController {
                                                             style: .done,
                                                             target: self,
                                                             action: #selector(didtapSettingButton))
-           
     }
     
     @objc private func didtapSettingButton(){
