@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zje-8L-abL">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="806"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="zoO-gP-IJi" kind="embed" id="uuu-VA-N35"/>
@@ -234,7 +234,7 @@
             <objects>
                 <viewController id="mxF-F6-OcA" customClass="TimelineViewController" customModule="Pathy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U7J-Cv-jpI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="806"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="oEB-8f-ZCi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -250,7 +250,7 @@
             <objects>
                 <viewController id="Hkn-ep-ylH" customClass="NotificationViewController" customModule="Pathy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yu0-wV-rMm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="806"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="8rM-X0-TgI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -266,7 +266,7 @@
             <objects>
                 <viewController id="JxM-m2-klm" customClass="ProfileViewController" customModule="Pathy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qmi-xw-Ta5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="806"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="gs4-2h-tsN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -282,7 +282,7 @@
             <objects>
                 <viewController id="XoJ-U5-aYi" customClass="ExploreViewController" customModule="Pathy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ytN-Ow-hrz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="806"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="4EF-0Y-HzT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

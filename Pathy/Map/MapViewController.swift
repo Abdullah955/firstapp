@@ -6,6 +6,8 @@ import CoreLocation
 
 
 
+                                    
+
 class MapViewController: UIViewController, MKMapViewDelegate, UISearchBarDelegate {
 
 //    @IBOutlet weak var mapView: MKMapView!
@@ -15,7 +17,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, UISearchBarDelegat
     var mapView: MKMapView!
 
   
-
+    
 //    let locationManager = CLLocationManager()
     private var locationManager: CLLocationManager!
     private var currentLocation: CLLocation?
@@ -54,15 +56,19 @@ class MapViewController: UIViewController, MKMapViewDelegate, UISearchBarDelegat
     
     func configurSearchBar() {
         
-//        let mySearchBar = UISearchBar()
         mySearchBar.frame = CGRect(x: 0, y: mapView.top + 10 , width: view.frame.size.width, height: 50)
         mySearchBar.showsCancelButton = true
         mySearchBar.placeholder = "Search .."
-//        mySearchBar.barStyle = .black
         mySearchBar.searchBarStyle = .minimal
-    
-    
+        
     }
+
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        dismiss(animated: true, completion: nil)
+
+    }
+
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
