@@ -56,6 +56,16 @@ final class SettingViewController: UIViewController {
     }
     
     private func didTapLogOut(){
+        
+        let ActionSheet = UIAlertController(title: "Logout",
+                                            message: "Are you sure you want to Logut ?",
+                                            preferredStyle: .actionSheet)
+        
+        ActionSheet.addAction(UIAlertAction(title: "Cancle",
+                                            style: .cancel,
+                                            handler: nil)
+                                            )
+        
         AuthManger.shared.LogOut(completion: { sceess in
             if sceess{
                 let LoginVC = LoginViewController()
