@@ -19,7 +19,6 @@ class TimelineViewController: UIViewController {
     }()
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(tableView)
@@ -50,6 +49,9 @@ class TimelineViewController: UIViewController {
                 present(LoginVC, animated: false)
             }
     }
+    
+    
+    
 
     
 }
@@ -62,7 +64,7 @@ extension TimelineViewController:  UITableViewDelegate, UITableViewDataSource {
         return 0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: PostFeedTableViewCell.identifer for : indexPath) as! PostFeedTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: PostFeedTableViewCell.identifer, for : indexPath) as! PostFeedTableViewCell
         
         return cell
     }
