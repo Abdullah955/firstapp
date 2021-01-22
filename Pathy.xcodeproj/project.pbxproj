@@ -29,6 +29,7 @@
 		2D98104E25B38D7A00E6DC82 /* Map1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D98104D25B38D7A00E6DC82 /* Map1ViewController.swift */; };
 		2DA4136725B640DF00181556 /* LocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA4136625B640DF00181556 /* LocationPickerViewController.swift */; };
 		2DA4136C25B8844700181556 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA4136B25B8844700181556 /* SettingViewController.swift */; };
+		2DA4137225BA4CBD00181556 /* PostFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA4137125BA4CBD00181556 /* PostFeedTableViewCell.swift */; };
 		76A4A7A6003640D14637D928 /* Pods_Pathy_PathyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C535B509E7F02C6B489829F /* Pods_Pathy_PathyUITests.framework */; };
 		9B5F8404A1EB563882E10097 /* Pods_PathyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783B0EE526BA4607C2EF7516 /* Pods_PathyTests.framework */; };
 		CBDAE45B6EDF97E0EE177B56 /* Pods_Pathy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E809C7ACAECC974B33AA57A /* Pods_Pathy.framework */; };
@@ -81,6 +82,7 @@
 		2D98104D25B38D7A00E6DC82 /* Map1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map1ViewController.swift; sourceTree = "<group>"; };
 		2DA4136625B640DF00181556 /* LocationPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerViewController.swift; sourceTree = "<group>"; };
 		2DA4136B25B8844700181556 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		2DA4137125BA4CBD00181556 /* PostFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFeedTableViewCell.swift; sourceTree = "<group>"; };
 		4F618B133C5B1BF39B891F63 /* Pods-Pathy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pathy.debug.xcconfig"; path = "Target Support Files/Pods-Pathy/Pods-Pathy.debug.xcconfig"; sourceTree = "<group>"; };
 		55F1576A3D97591A395F40B1 /* Pods-Pathy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pathy.release.xcconfig"; path = "Target Support Files/Pods-Pathy/Pods-Pathy.release.xcconfig"; sourceTree = "<group>"; };
 		5E809C7ACAECC974B33AA57A /* Pods_Pathy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pathy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +193,7 @@
 		2D41D95325AF7C690060EE4A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2DA4137025BA4C8200181556 /* Cell */,
 				2D41D95425AF7C8F0060EE4A /* Storyboards */,
 				2D41D92525AF7BAA0060EE4A /* LaunchScreen.storyboard */,
 			);
@@ -247,6 +250,14 @@
 				2DA4136625B640DF00181556 /* LocationPickerViewController.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		2DA4137025BA4C8200181556 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2DA4137125BA4CBD00181556 /* PostFeedTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		6C8188A69103577051193345 /* Pods */ = {
@@ -523,6 +534,7 @@
 				2D41D96125AF85C00060EE4A /* ProfileViewController.swift in Sources */,
 				2D980FDE25B13EB100E6DC82 /* ActionButtonViewController.swift in Sources */,
 				2D534A7325AFAF8B003B1686 /* AuthManger.swift in Sources */,
+				2DA4137225BA4CBD00181556 /* PostFeedTableViewCell.swift in Sources */,
 				2D534A6025AFAAA6003B1686 /* LoginViewController.swift in Sources */,
 				2D41D96B25AF8DCB0060EE4A /* CameraViewController.swift in Sources */,
 				2D41D95925AF85B60060EE4A /* NotificationViewController.swift in Sources */,
